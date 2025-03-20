@@ -1,5 +1,5 @@
 # PAMO2025
 Excersises on PAMO subject
 
-#Author
+# Author
 Szymon Rosztajn
