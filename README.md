@@ -1,2 +1,5 @@
 # PAMO2025
-Excersises on PAMO subjcet
+Excersises on PAMO subject
+
+# Author
+Szymon Rosztajn
