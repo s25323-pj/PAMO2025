@@ -1,5 +1,6 @@
 package com.example.bmicalculator;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,11 +22,29 @@ public class MainActivity extends AppCompatActivity {
         heightInput = findViewById(R.id.heightInput);
         resultText = findViewById(R.id.resultText);
         Button calculateButton = findViewById(R.id.calculateButton);
+        Button caloriesButton = findViewById(R.id.caloriesButton);
+        Button recipesButton = findViewById(R.id.recipesButton);
 
         calculateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 calculateBMI();
+            }
+        });
+
+        caloriesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CalorieCalculatorActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        recipesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RecipesActivity.class);
+                startActivity(intent);
             }
         });
     }
